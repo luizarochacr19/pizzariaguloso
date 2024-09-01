@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pedido de Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guloso Pizzas</h1>
+        
+        <form>
+            <label for="size">Qual o tamanho da sua fome?</label>
+            <select id="size" name="size" required>
+                <option value="">Selecione...</option>
+                <option value="pequena">De Passarinho (4 fatias)</option>
+                <option value="media">De Rei (8 fatias)</option>
+                <option value="grande">De Guloso (12 fatias)</option>
+            </select>
+
+            <label for="sabor">Sabores (escolha até 3 sabores)</label>
+            <div id="sabor">
+                <input type="checkbox" id="pesto" name="sabor" value="pesto">
+                <label for="queijo">Pesto</label><br>
+
+                <input type="checkbox" id="di parma" name="sabor" value="di parma">
+                <label for="pepperoni">Presunto di parma com mussarela de búfala</label><br>
+
+                <input type="checkbox" id="frango" name="sabor" value="frango">
+                <label for="azeitona">Frango ao molho de cream cheese e azeitonas</label><br>
+
+                <input type="checkbox" id="cogumelos" name="sabor" value="cogumelos">
+                <label for="bacon">Cogumelos ao molho trufado</label><br>
+
+                <input type="checkbox" id="bacon" name="sabor" value="bacon">
+                <label for="queijo">Bacon e milho</label><br>
+            </div>
+
+            <label for="delivery">Opções de entrega:</label>
+            <div id="delivery">
+                <input type="radio" id="delivery-sim" name="delivery" value="sim">
+                <label for="delivery-sim">Entrega</label><br>
+
+                <input type="radio" id="delivery-nao" name="delivery" value="nao">
+                <label for="delivery-nao">Retirada na loja - Sou Guloso</label>
+            </div>
+
+            <label for="notes">Observações:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Ex: Sem azeitonas, massa mais passada, etc."></textarea>
+
+            <button type="submit">Fazer Pedido</button>
+        </form>
+    </div>
+</body>
+</html>
